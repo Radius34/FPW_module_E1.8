@@ -1,0 +1,36 @@
+.navigation {
+    float: right;
+    height: 100%;
+}
+
+.navigation a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #101010;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.navigation a:hover::after {
+    content: ' →';
+}
+
+.highlight {
+    position: relative;
+}
+
+.highlight:hover::after {
+    content: ' →';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
